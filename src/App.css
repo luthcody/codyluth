@@ -1,0 +1,18 @@
+.mainContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.hero-banner {
+  padding: 2.5%;
+  align-self: center;
+  max-width: 95%;
+}
+
+h1 {
+  padding-top: 15px;
+  text-align: center;
+  margin: 0px;
+}
