@@ -6,13 +6,13 @@
 }
 
 .hero-banner {
-  padding: 2.5%;
+  padding: 0px 2.5%;
   align-self: center;
   max-width: 95%;
 }
 
 h1 {
-  padding-top: 15px;
+  padding: 15px 0px;
   text-align: center;
   margin: 0px;
 }
