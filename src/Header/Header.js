@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './Header.css';
+import '../css/navigation/Header.css';
+import SvgIcon from '@material-ui/core/SvgIcon';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export class Header extends Component {
   render() {
@@ -10,14 +12,11 @@ export class Header extends Component {
             <div className="header-logo">Cody Luth</div>
             <div className="header-navigation">
               <div className="header-navigation-button">
-                Navigation 1
+                Button 1
               </div>
               <div className="header-navigation-button">
-                Navigation 2
+                Button 2
               </div>
-            </div>
-            <div className="header-social">
-              Social Media Icons
             </div>
           </div>
         </div>
