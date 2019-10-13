@@ -17,8 +17,8 @@ h1 {
   margin: 0px;
 }
 
-@import url("./css/fonts/sinkinsans_100thin_macroman/stylesheet.css"); 
-@import url("./css/fonts/sinkinsans_100thinitalic_macroman/stylesheet.css");
-@import url("./css/fonts/sinkinsans_400regular_macroman/stylesheet.css");     /* font-family: 'sinkin_sans400_regular' */
-@import url("./css/fonts/sinkinsans_400italic_macroman/stylesheet.css");
-@import url("./css/fonts/sinkinsans_600semibold_macroman/stylesheet.css");    /* font-family: 'sinkin_sans600_semibold' */
+@import url("./fonts/sinkinsans_100thin_macroman/stylesheet.css"); 
+@import url("./fonts/sinkinsans_100thinitalic_macroman/stylesheet.css");
+@import url("./fonts/sinkinsans_400regular_macroman/stylesheet.css");     /* font-family: 'sinkin_sans400_regular' */
+@import url("./fonts/sinkinsans_400italic_macroman/stylesheet.css");
+@import url("./fonts/sinkinsans_600semibold_macroman/stylesheet.css");    /* font-family: 'sinkin_sans600_semibold' */

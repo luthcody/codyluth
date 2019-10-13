@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import '../css/navigation/Header.css';
-import SvgIcon from '@material-ui/core/SvgIcon';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import './Header.css';
 
 export class Header extends Component {
   render() {
