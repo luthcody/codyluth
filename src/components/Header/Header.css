@@ -18,6 +18,7 @@
   font-family: 'sinkin_sans600_semibold';
   font-size: 35px;
   text-align: center;
+  text-decoration: none;
   color: #3AAFA9;
   margin: 0px 10px;
 }
@@ -35,8 +36,10 @@
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  color: white;
+  text-decoration: none;
 }
 
 .header-navigation-button:hover {
-  color: black;
+  color: #3AAFA9;
 }

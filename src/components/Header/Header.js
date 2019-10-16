@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import '../css/navigation/Header.css';
-import SvgIcon from '@material-ui/core/SvgIcon';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 export class Header extends Component {
   render() {
@@ -9,14 +8,14 @@ export class Header extends Component {
       <div>
         <div className="header">
           <div className="header-content">
-            <div className="header-logo">Cody Luth</div>
+            <Link to='' className="header-logo">Cody Luth</Link>
             <div className="header-navigation">
-              <div className="header-navigation-button">
-                Button 1
-              </div>
-              <div className="header-navigation-button">
-                Button 2
-              </div>
+              <Link to='projects' className="header-navigation-button">
+                Projects
+              </Link>
+              <Link to='about' className="header-navigation-button">
+                About
+              </Link>
             </div>
           </div>
         </div>
