@@ -1,11 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Header } from './components/Header/Header';
-import './App.css';
-
+import { Header } from './Header/Header';
 import Home from './Home';
-import Express from './components/Express/Express';
 import Error from './components/Error/Error';
+import './App.css';
 
 function App() {
   return (
@@ -13,7 +11,6 @@ function App() {
       <Header>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/express" component={Express}/>
           <Route component={Error} />
         </Switch>
       </Header>
