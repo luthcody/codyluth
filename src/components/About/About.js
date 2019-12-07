@@ -1,10 +1,10 @@
 import React from 'react';
+import Photo from './Images/Picture.JPG';
+import './About.css';
 
 function About() {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <h1>About</h1>
   );
 }
 
