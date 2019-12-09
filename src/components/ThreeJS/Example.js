@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as THREE from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import './Example.css';
@@ -7,10 +7,10 @@ import * as model from './wave_v15.glb';
 
 class Example extends Component {
   componentDidMount() {
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera( 75, 940/705, 0.01, 1000 );
+    var scene = new Scene();
+    var camera = new PerspectiveCamera( 75, 940/705, 0.01, 1000 );
 
-    var renderer = new THREE.WebGLRenderer();
+    var renderer = new WebGLRenderer();
     renderer.setSize( 940, 705 );
     this.mount.appendChild( renderer.domElement );
 
