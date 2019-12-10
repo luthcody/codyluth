@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
 // import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import './Example.css';
