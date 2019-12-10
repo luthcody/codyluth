@@ -3,7 +3,7 @@ import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import './Example.css';
-import * as model from './wave_v15.glb';
+//import * as model from './wave_v15.glb';
 
 class Example extends Component {
   componentDidMount() {
