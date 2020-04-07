@@ -4,7 +4,6 @@ import './Header.css';
 
 function Header(props) {
   var location = useLocation();
-  console.log(location.pathname);
 
   var headerContent;
   if(location.pathname !== "/"){
