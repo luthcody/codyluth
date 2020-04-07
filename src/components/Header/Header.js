@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 export class Header extends Component {
@@ -8,14 +8,10 @@ export class Header extends Component {
       <div>
         <div className="header">
           <div className="header-content">
-            <Link to='' className="header-logo">Cody Luth</Link>
+            <NavLink to='' className="header-logo">Cody Luth</NavLink>
             <div className="header-navigation">
-              <Link to='projects' className="header-navigation-button">
-                Projects
-              </Link>
-              <Link to='about' className="header-navigation-button">
-                About
-              </Link>
+              <NavLink to='' exact={true} activeClassName="is-active" className="header-navigation-button">Home</NavLink>
+              <NavLink to='projects' activeClassName="is-active" className="header-navigation-button">Projects</NavLink>
             </div>
           </div>
         </div>
