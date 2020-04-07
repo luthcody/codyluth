@@ -10,10 +10,10 @@ function Home() {
         <Grid>
           <Row>
             <Col className="column" xs={5}>
-              <img className="image" src={ require('./Images/Picture.JPG') } />
+              <img className="image" src={ Photo } />
             </Col>
             <Col className="column" xs={7}>
-              <p>Hello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody LuthHello! My name is Cody Luth</p>
+              <p>Hello! My name is Cody Luth</p>
             </Col>
           </Row>
         </Grid>

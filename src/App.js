@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Header } from './components/Header/Header';
+import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
+import Header from './components/Header/Header';
+import TempHome from './components/TempHome/TempHome';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Error from './components/Error/Error';
@@ -12,7 +13,8 @@ function App() {
     <Router>
       <Header>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/" component={TempHome}/>
+          <Route path="/home" component={Home}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/threejs" component={ThreeJS}/>
           <Route component={Error} />
