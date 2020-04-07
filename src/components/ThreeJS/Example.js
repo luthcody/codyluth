@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
-import { OBJLoader } from 'three-obj-mtl-loader';
+//import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
+//import { OBJLoader } from 'three-obj-mtl-loader';
 
 import './Example.css';
 import * as model from './wave_v15.glb';
