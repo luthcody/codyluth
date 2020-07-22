@@ -1,12 +1,13 @@
 import React from 'react';
+import ConstructionPhoto from '../../images/construction.gif';
 import './TempHome.css';
 
 function TempHome() {
   return (
     <div>
       <div className="content">
-        <h1>This site is a work in progress</h1>
-        <h3>(Don't judge me)</h3>
+        <img className="image" src={ ConstructionPhoto } alt="Cody Luth"/>
+        <h1>Work in Progress...</h1>
       </div>
     </div>
   );
