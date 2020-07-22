@@ -1,64 +1,29 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from './components/Header/Header';
+import TempHome from './components/TempHome/TempHome';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import Error from './components/Error/Error';
+import ThreeJS from './components/ThreeJS/Example'
 import './App.css';
 
 class App extends Component {
-  // Initialize state
-  state = { data: [] }
-
-  // Fetch passwords after first mount
-  componentDidMount() {
-    this.getPasswords();
-  }
-
-  getPasswords = () => {
-    // Get the passwords and store them in state
-    fetch('/api/passwords')
-      .then(res => res.json())
-      .then(data => this.setState({ data }));
-  }
-
   render() {
-    const { data } = this.state;
-
-    return (
-      <div className="App">
-        {/* Render the passwords if we have them */}
-        {data.count ? (
-          <div>
-            <h1>{data.count} Passwords.</h1>
-            <ul className="passwords">
-              {/*
-                Generally it's bad to use "index" as a key.
-                It's ok for this example because there will always
-                be the same number of passwords, and they never
-                change positions in the array.
-              */}
-              {data.passwords.map((password, index) =>
-                <li key={index}>
-                  {password}
-                </li>
-              )}
-            </ul>
-            <button
-              className="more"
-              onClick={this.getPasswords}>
-              Get More
-            </button>
-          </div>
-        ) : (
-          // Render a helpful message otherwise
-          <div>
-            <h1>No passwords :(</h1>
-            <button
-              className="more"
-              onClick={this.getPasswords}>
-              Try Again?
-            </button>
-          </div>
-        )}
-      </div>
-    );
-  }
+    return(
+      <Router>
+        <Header>
+          <Switch>
+            <Route exact path="/" component={TempHome}/>
+            <Route path="/home" component={Home}/>
+            <Route path="/projects" component={Projects}/>
+            <Route path="/threejs" component={ThreeJS}/>
+            <Route component={Error} />
+          </Switch>
+        </Header>
+      </Router>
+    )
+  };
 }
 
 export default App;

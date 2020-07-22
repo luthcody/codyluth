@@ -1,7 +1,5 @@
 import React from 'react';
-import Photo from './Images/Picture.JPG';
 import './TempHome.css';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
 function TempHome() {
   return (
