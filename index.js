@@ -2,15 +2,27 @@ const express = require('express');
 const path = require('path');
 const enforce = require('express-sslify');
 const app = express();
+const pgp = require('pg-promise')();
+const db = pgp('postgres://xtwnjqjzqbcalf:7a174aa04e7a4c7c76b7fc790efc481d5be92cf26825c0525484f541a6933cdb@ec2-54-234-28-165.compute-1.amazonaws.com:5432/d7kmkpt3tj4tnq');
 
-// Serve static files from the React app
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+if (app.get("env") === "production") {
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
+
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Put all API endpoints under '/api'
 app.get('/api/test', (req, res) => {
   var d = new Date();
   var n = d.getTime();
+
+  db.one('INSERT INTO public."Sample" ("Username") VALUES ("$1")', n)
+  .then(function (data) {
+    console.log('DATA:', data.value)
+  })
+  .catch(function (error) {
+    console.log('ERROR:', error)
+  })
+
 
   res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n });
 });

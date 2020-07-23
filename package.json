@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "~4.16.1",
     "express-sslify": "^1.2.0",
-    "password-generator": "^2.3.2"
+    "password-generator": "^2.3.2",
+    "pg-promise": "^10.5.8"
   }
 }
