@@ -16,7 +16,7 @@ app.get('/api/test', (req, res) => {
   var n = d.getTime();
   var dbStatus;
 
-  db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1')`, n)
+  db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1') RETURNING "ID"`, n)
   .then(function (data) {
     dbStatus = 'Successfully added ' + n + ' to DB.';
     res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
