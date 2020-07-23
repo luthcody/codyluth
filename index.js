@@ -14,17 +14,19 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('/api/test', (req, res) => {
   var d = new Date();
   var n = d.getTime();
+  var dbStatus;
 
-  db.one('INSERT INTO public."Sample" ("Username") VALUES ("$1")', n)
+  db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1')`, n)
   .then(function (data) {
-    console.log('DATA:', data.value)
+    dbStatus = 'Successfully added ' + n + ' to DB.';
   })
   .catch(function (error) {
+    dbStatus = 'ERROR: Could not add ' + n + ' to DB.';
     console.log('ERROR:', error)
   })
 
 
-  res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n });
+  res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
 });
 
 app.get('*', (req, res) => {

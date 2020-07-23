@@ -34,7 +34,7 @@ class Home extends Component {
             </Row>
           </Grid>
           <div>
-            {console.log(data.consoleMsg)}
+            {console.log(data.consoleMsg + ' --- ' + data.dbStatus)}
             {data.msg}
           </div>
           <button
