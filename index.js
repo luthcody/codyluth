@@ -18,7 +18,8 @@ app.get('/api/test', (req, res) => {
 
   db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1') RETURNING "ID"`, n)
   .then(function (data) {
-    dbStatus = 'Successfully added ' + n + ' to DB.';
+    console.log(data);
+    dbStatus = 'Successfully added ' + data + ' to DB.';
     res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
   })
   .catch(function (error) {
