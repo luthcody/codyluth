@@ -2,8 +2,25 @@ const express = require('express');
 const path = require('path');
 const enforce = require('express-sslify');
 const app = express();
-const pgp = require('pg-promise')();
-const db = pgp('postgres://xtwnjqjzqbcalf:7a174aa04e7a4c7c76b7fc790efc481d5be92cf26825c0525484f541a6933cdb@ec2-54-234-28-165.compute-1.amazonaws.com:5432/d7kmkpt3tj4tnq');
+const { Pool, Client } = require('pg');
+
+const pool = new Pool({
+  user: 'dbuser',
+  host: 'database.server.com',
+  database: 'mydb',
+  password: 'secretpassword',
+  port: 3211,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+})
+
+// the pool will emit an error on behalf of any idle clients
+// it contains if a backend error or network partition happens
+pool.on('error', (err, client) => {
+  console.error('Unexpected error on idle client', err)
+  process.exit(-1)
+})
 
 if (app.get("env") === "production") {
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
@@ -11,22 +28,34 @@ if (app.get("env") === "production") {
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('/api/test', (req, res) => {
+app.get('/api/test', async(req, res) => {
   var d = new Date();
   var n = d.getTime();
   var dbStatus;
 
-  db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1') RETURNING "ID"`, n)
-  .then(function (data) {
-    console.log(data);
-    dbStatus = 'Successfully added ' + data + ' to DB.';
-    res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
-  })
-  .catch(function (error) {
-    dbStatus = 'ERROR: Could not add ' + n + ' to DB.';
-    console.log('ERROR:', error)
-    res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
-  })
+  await pool.connect().then(async client => {
+    return await client.query(`INSERT INTO public."Sample" ("Username") VALUES ('$1') RETURNING "ID"`, n)
+      .then(res => {
+        client.release()
+        console.log(res.rows[0])
+      })
+      .catch(err => {
+        client.release()
+        console.log(err)
+      })
+  });
+
+  // db.one(`INSERT INTO public."Sample" ("Username") VALUES ('$1') RETURNING "ID"`, n)
+  // .then(function (data) {
+  //   console.log(data);
+  //   dbStatus = 'Successfully added ' + data.ID + ' to DB.';
+  //   res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
+  // })
+  // .catch(function (error) {
+  //   dbStatus = 'ERROR: Could not add ' + n + ' to DB.';
+  //   console.log('ERROR:', error)
+  //   res.json({ msg: 'Express backend connected. Server Time: ' + n , consoleMsg: 'Express connected. Request Time: ' + n, dbStatus: dbStatus });
+  // })
 });
 
 app.get('*', (req, res) => {
