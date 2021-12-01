@@ -27,7 +27,7 @@ export default function Index() {
 
   return (
     <div className="row justify-content-center">
-      <div className={'col-8 ' + styles.typed}>
+      <div className={'col-12 col-md-8 px-4 ' + styles.typed}>
         <span ref={el} />
       </div>
 

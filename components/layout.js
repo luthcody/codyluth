@@ -8,8 +8,8 @@ export default function Layout({ children }) {
         <title>Cody Luth</title>
       </Head>
       <div className={'row ' + styles.menu}>
-        <div className={'col-4 ' + styles.name}>{ '// Cody Luth' }</div>
-        <div className="col-8 align-self-middle text-end">
+        <div className={'col-12 col-md-4 text-center text-md-start ' + styles.name}>{ '// Cody Luth' }</div>
+        <div className="col-12 col-md-8 align-self-middle text-center text-md-end">
           <a href="https://github.com/luthcody" target="_blank" className={styles.link}>{'{ GitHub }'}</a>
         </div>
       </div>
