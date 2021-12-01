@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  src: url('static/fonts/RhodiumLibre-Regular.ttf');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: $charcol;
+  color: $light-grey 
+}
+
+.text-color-blue {
+  color: $blue;
+}
+
+a:hover { 
+  color: $blue
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  font-family: $header-font;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+  font-family: $header-font;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+  font-family: $header-font;
+}
