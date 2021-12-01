@@ -1,92 +1,16 @@
-"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
 exports.id = "pages/index";
 exports.ids = ["pages/index"];
 exports.modules = {
-
-/***/ "./components/header.js":
-/*!******************************!*\
-  !*** ./components/header.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ MainHeader)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var circletype__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! circletype */ "circletype");
-/* harmony import */ var circletype__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(circletype__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\luthc\\Documents\\GitHub\\codyluth\\components\\header.js";
-
-
-
-function MainHeader() {
-  const circleInstance = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    new (circletype__WEBPACK_IMPORTED_MODULE_1___default())(circleInstance.current).radius(800).dir(-1);
-  }, []);
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
-    className: "header",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
-      className: "header-title",
-      ref: circleInstance,
-      children: "Cody Luth"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 5
-  }, this);
-}
-
-/***/ }),
-
-/***/ "./components/page.js":
-/*!****************************!*\
-  !*** ./components/page.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Page)
-/* harmony export */ });
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ "./components/header.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\luthc\\Documents\\GitHub\\codyluth\\components\\page.js";
- // import Footer from './footer'
-
-
-
-function Page({
-  children
-}) {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_header__WEBPACK_IMPORTED_MODULE_0__.default, {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("main", {
-      children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true);
-}
-
-/***/ }),
 
 /***/ "./pages/index.js":
 /*!************************!*\
@@ -94,74 +18,18 @@ function Page({
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Index)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/page */ "./components/page.js");
-/* harmony import */ var circletype__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! circletype */ "circletype");
-/* harmony import */ var circletype__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(circletype__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\luthc\\Documents\\GitHub\\codyluth\\pages\\index.js";
-
-
-
-
-
-function Index() {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("h2", {
-    children: " Hell oworld! "
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 5
-  }, this);
-}
-
-Index.getLayout = function getLayout(page) {
-  const circleInstance = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    new (circletype__WEBPACK_IMPORTED_MODULE_3___default())(circleInstance.current).radius(800).dir(-1);
-  }, []);
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_components_page__WEBPACK_IMPORTED_MODULE_2__.default, {
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("h1", {
-      children: "Hello world!"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 5
-  }, this);
-};
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Index)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! typed.js */ \"typed.js\");\n/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.scss */ \"./pages/index.module.scss\");\n/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);\nvar _jsxFileName = \"/Users/CodyLuth/Documents/GitHub/codyluth/pages/index.js\";\n\n\n\n\nfunction Index() {\n  const el = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);\n  const typed = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);\n  react__WEBPACK_IMPORTED_MODULE_0___default().useEffect(() => {\n    const options = {\n      strings: [\"Hey... \", \"Hey... I'm <span class='text-color-blue'>Cody</span>.\", \"Hey... I'm <span class='text-color-blue'>Cody</span>.</br>I'm a web developer for <span class='text-color-blue'>Leatherman Tool Group</span>.\", \"Hey... I'm <span class='text-color-blue'>Cody</span>.</br>I'm a web developer for <span class='text-color-blue'>Leatherman Tool Group</span>.</br>I also <span class='text-color-blue'>freelance</span>.\"],\n      typeSpeed: 40,\n      backSpeed: 50\n    };\n    typed.current = new (typed_js__WEBPACK_IMPORTED_MODULE_1___default())(el.current, options);\n    return () => {\n      typed.current.destroy();\n    };\n  }, []);\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(\"div\", {\n    className: \"row justify-content-center\",\n    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(\"div\", {\n      className: 'col-8 ' + (_index_module_scss__WEBPACK_IMPORTED_MODULE_3___default().typed),\n      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(\"span\", {\n        ref: el\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 31,\n        columnNumber: 9\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 30,\n      columnNumber: 7\n    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(\"h3\", {\n      className: \"col-12 text-center mt-4\",\n      children: \"Projects\"\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 34,\n      columnNumber: 7\n    }, this)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 29,\n    columnNumber: 5\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBOztBQUVlLFNBQVNHLEtBQVQsR0FBaUI7QUFDOUIsUUFBTUMsRUFBRSxHQUFHSixtREFBQSxDQUFhLElBQWIsQ0FBWDtBQUNELFFBQU1NLEtBQUssR0FBR04sbURBQUEsQ0FBYSxJQUFiLENBQWQ7QUFFQ0EsRUFBQUEsc0RBQUEsQ0FBZ0IsTUFBTTtBQUNwQixVQUFNUSxPQUFPLEdBQUc7QUFDZkMsTUFBQUEsT0FBTyxFQUFFLENBQ04sU0FETSxFQUVOLHVEQUZNLEVBR04sK0lBSE0sRUFJTiwwTUFKTSxDQURNO0FBT2RDLE1BQUFBLFNBQVMsRUFBRSxFQVBHO0FBUWRDLE1BQUFBLFNBQVMsRUFBRTtBQVJHLEtBQWhCO0FBV0FMLElBQUFBLEtBQUssQ0FBQ00sT0FBTixHQUFnQixJQUFJWCxpREFBSixDQUFVRyxFQUFFLENBQUNRLE9BQWIsRUFBc0JKLE9BQXRCLENBQWhCO0FBRUEsV0FBTyxNQUFNO0FBQ1hGLE1BQUFBLEtBQUssQ0FBQ00sT0FBTixDQUFjQyxPQUFkO0FBQ0QsS0FGRDtBQUdELEdBakJELEVBaUJHLEVBakJIO0FBbUJBLHNCQUNFO0FBQUssYUFBUyxFQUFDLDRCQUFmO0FBQUEsNEJBQ0U7QUFBSyxlQUFTLEVBQUUsV0FBV1gsaUVBQTNCO0FBQUEsNkJBQ0U7QUFBTSxXQUFHLEVBQUVFO0FBQVg7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFERixlQUtFO0FBQUksZUFBUyxFQUFDLHlCQUFkO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBTEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUFTRCIsInNvdXJjZXMiOlsid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvLi9wYWdlcy9pbmRleC5qcz80NGQ4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBUeXBlZCBmcm9tICd0eXBlZC5qcyc7XG5pbXBvcnQgc3R5bGVzIGZyb20gJy4vaW5kZXgubW9kdWxlLnNjc3MnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBJbmRleCgpIHtcbiAgY29uc3QgZWwgPSBSZWFjdC51c2VSZWYobnVsbCk7XG5cdGNvbnN0IHR5cGVkID0gUmVhY3QudXNlUmVmKG51bGwpO1xuXG4gIFJlYWN0LnVzZUVmZmVjdCgoKSA9PiB7XG4gICAgY29uc3Qgb3B0aW9ucyA9IHtcbiAgICBcdHN0cmluZ3M6IFtcbiAgICAgICAgXCJIZXkuLi4gXCIsXG4gICAgICAgIFwiSGV5Li4uIEknbSA8c3BhbiBjbGFzcz0ndGV4dC1jb2xvci1ibHVlJz5Db2R5PC9zcGFuPi5cIixcbiAgICAgICAgXCJIZXkuLi4gSSdtIDxzcGFuIGNsYXNzPSd0ZXh0LWNvbG9yLWJsdWUnPkNvZHk8L3NwYW4+LjwvYnI+SSdtIGEgd2ViIGRldmVsb3BlciBmb3IgPHNwYW4gY2xhc3M9J3RleHQtY29sb3ItYmx1ZSc+TGVhdGhlcm1hbiBUb29sIEdyb3VwPC9zcGFuPi5cIixcbiAgICAgICAgXCJIZXkuLi4gSSdtIDxzcGFuIGNsYXNzPSd0ZXh0LWNvbG9yLWJsdWUnPkNvZHk8L3NwYW4+LjwvYnI+SSdtIGEgd2ViIGRldmVsb3BlciBmb3IgPHNwYW4gY2xhc3M9J3RleHQtY29sb3ItYmx1ZSc+TGVhdGhlcm1hbiBUb29sIEdyb3VwPC9zcGFuPi48L2JyPkkgYWxzbyA8c3BhbiBjbGFzcz0ndGV4dC1jb2xvci1ibHVlJz5mcmVlbGFuY2U8L3NwYW4+LlwiLFxuICAgICAgXSxcbiAgICAgIHR5cGVTcGVlZDogNDAsXG4gICAgICBiYWNrU3BlZWQ6IDUwLFxuICAgIH07XG4gICAgXG4gICAgdHlwZWQuY3VycmVudCA9IG5ldyBUeXBlZChlbC5jdXJyZW50LCBvcHRpb25zKTtcbiAgICBcbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgdHlwZWQuY3VycmVudC5kZXN0cm95KCk7XG4gICAgfVxuICB9LCBbXSlcblxuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwicm93IGp1c3RpZnktY29udGVudC1jZW50ZXJcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPXsnY29sLTggJyArIHN0eWxlcy50eXBlZH0+XG4gICAgICAgIDxzcGFuIHJlZj17ZWx9IC8+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGgzIGNsYXNzTmFtZT1cImNvbC0xMiB0ZXh0LWNlbnRlciBtdC00XCI+UHJvamVjdHM8L2gzPlxuICAgIDwvZGl2PlxuICApXG59XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJUeXBlZCIsInN0eWxlcyIsIkluZGV4IiwiZWwiLCJ1c2VSZWYiLCJ0eXBlZCIsInVzZUVmZmVjdCIsIm9wdGlvbnMiLCJzdHJpbmdzIiwidHlwZVNwZWVkIiwiYmFja1NwZWVkIiwiY3VycmVudCIsImRlc3Ryb3kiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n");
 
 /***/ }),
 
-/***/ "circletype":
-/*!*****************************!*\
-  !*** external "circletype" ***!
-  \*****************************/
+/***/ "./pages/index.module.scss":
+/*!*********************************!*\
+  !*** ./pages/index.module.scss ***!
+  \*********************************/
 /***/ ((module) => {
 
-module.exports = require("circletype");
-
-/***/ }),
-
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
-/***/ ((module) => {
-
-module.exports = require("next/head");
+eval("// Exports\nmodule.exports = {\n\t\"typed\": \"index_typed__2Tb5T\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5tb2R1bGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvLi9wYWdlcy9pbmRleC5tb2R1bGUuc2Nzcz80N2RkIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcInR5cGVkXCI6IFwiaW5kZXhfdHlwZWRfXzJUYjVUXCJcbn07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/index.module.scss\n");
 
 /***/ }),
 
@@ -171,6 +39,7 @@ module.exports = require("next/head");
   \************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
 
 /***/ }),
@@ -181,7 +50,19 @@ module.exports = require("react");
   \****************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "typed.js":
+/*!***************************!*\
+  !*** external "typed.js" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("typed.js");
 
 /***/ })
 
@@ -196,4 +77,3 @@ var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
 module.exports = __webpack_exports__;
 
 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFnZXMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTs7QUFFZSxTQUFTRyxVQUFULEdBQXNCO0FBQ25DLFFBQU1DLGNBQWMsR0FBR0gsNkNBQU0sRUFBN0I7QUFFQUQsRUFBQUEsZ0RBQVMsQ0FBQyxNQUFNO0FBQ2QsUUFBSUUsbURBQUosQ0FBZUUsY0FBYyxDQUFDQyxPQUE5QixFQUF1Q0MsTUFBdkMsQ0FBOEMsR0FBOUMsRUFBbURDLEdBQW5ELENBQXVELENBQUMsQ0FBeEQ7QUFDRCxHQUZRLEVBRU4sRUFGTSxDQUFUO0FBSUEsc0JBQ0U7QUFBSyxhQUFTLEVBQUMsUUFBZjtBQUFBLDJCQUNJO0FBQUssZUFBUyxFQUFDLGNBQWY7QUFBOEIsU0FBRyxFQUFFSCxjQUFuQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQUtEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0NkRDs7OztBQUVlLFNBQVNLLElBQVQsQ0FBYztBQUFFQyxFQUFBQTtBQUFGLENBQWQsRUFBNEI7QUFDekMsc0JBQ0U7QUFBQSw0QkFDRSw4REFBQyw0Q0FBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBREYsZUFFRTtBQUFBLGdCQUFPQTtBQUFQO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFGRjtBQUFBLGtCQURGO0FBT0Q7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQ1hEO0FBQ0E7QUFDQTtBQUNBOztBQUVlLFNBQVNFLEtBQVQsR0FBaUI7QUFDOUIsc0JBQ0U7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQUdEOztBQUVEQSxLQUFLLENBQUNDLFNBQU4sR0FBa0IsU0FBU0EsU0FBVCxDQUFtQkMsSUFBbkIsRUFBeUI7QUFDekMsUUFBTVYsY0FBYyxHQUFHSCw2Q0FBTSxFQUE3QjtBQUVBRCxFQUFBQSxnREFBUyxDQUFDLE1BQU07QUFDZCxRQUFJRSxtREFBSixDQUFlRSxjQUFjLENBQUNDLE9BQTlCLEVBQXVDQyxNQUF2QyxDQUE4QyxHQUE5QyxFQUFtREMsR0FBbkQsQ0FBdUQsQ0FBQyxDQUF4RDtBQUNELEdBRlEsRUFFTixFQUZNLENBQVQ7QUFJQSxzQkFDRSw4REFBQyxxREFBRDtBQUFBLDJCQUNFO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREY7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQURGO0FBS0QsQ0FaRDs7Ozs7Ozs7OztBQ1hBOzs7Ozs7Ozs7O0FDQUE7Ozs7Ozs7Ozs7QUNBQTs7Ozs7Ozs7OztBQ0FBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm4tc3RhcnRlci8uL2NvbXBvbmVudHMvaGVhZGVyLmpzIiwid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvLi9jb21wb25lbnRzL3BhZ2UuanMiLCJ3ZWJwYWNrOi8vbGVhcm4tc3RhcnRlci8uL3BhZ2VzL2luZGV4LmpzIiwid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvZXh0ZXJuYWwgXCJjaXJjbGV0eXBlXCIiLCJ3ZWJwYWNrOi8vbGVhcm4tc3RhcnRlci9leHRlcm5hbCBcIm5leHQvaGVhZFwiIiwid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvZXh0ZXJuYWwgXCJyZWFjdFwiIiwid2VicGFjazovL2xlYXJuLXN0YXJ0ZXIvZXh0ZXJuYWwgXCJyZWFjdC9qc3gtZGV2LXJ1bnRpbWVcIiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVJlZiB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgQ2lyY2xlVHlwZSBmcm9tICdjaXJjbGV0eXBlJztcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIE1haW5IZWFkZXIoKSB7XHJcbiAgY29uc3QgY2lyY2xlSW5zdGFuY2UgPSB1c2VSZWYoKTtcclxuXHJcbiAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgIG5ldyBDaXJjbGVUeXBlKGNpcmNsZUluc3RhbmNlLmN1cnJlbnQpLnJhZGl1cyg4MDApLmRpcigtMSk7XHJcbiAgfSwgW10pO1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXJcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci10aXRsZVwiIHJlZj17Y2lyY2xlSW5zdGFuY2V9PkNvZHkgTHV0aDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgKVxyXG59XHJcbiIsImltcG9ydCBIZWFkZXIgZnJvbSAnLi9oZWFkZXInXHJcbi8vIGltcG9ydCBGb290ZXIgZnJvbSAnLi9mb290ZXInXHJcblxyXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQYWdlKHsgY2hpbGRyZW4gfSkge1xyXG4gIHJldHVybiAoXHJcbiAgICA8PlxyXG4gICAgICA8SGVhZGVyIC8+XHJcbiAgICAgIDxtYWluPntjaGlsZHJlbn08L21haW4+XHJcbiAgICAgIHsvKiA8Rm9vdGVyIC8+ICovfVxyXG4gICAgPC8+XHJcbiAgKVxyXG59IiwiaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xyXG5pbXBvcnQgUGFnZSBmcm9tICcuLi9jb21wb25lbnRzL3BhZ2UnO1xyXG5pbXBvcnQgQ2lyY2xlVHlwZSBmcm9tICdjaXJjbGV0eXBlJztcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEluZGV4KCkge1xyXG4gIHJldHVybihcclxuICAgIDxoMj4gSGVsbCBvd29ybGQhIDwvaDI+XHJcbiAgKVxyXG59XHJcblxyXG5JbmRleC5nZXRMYXlvdXQgPSBmdW5jdGlvbiBnZXRMYXlvdXQocGFnZSkge1xyXG4gIGNvbnN0IGNpcmNsZUluc3RhbmNlID0gdXNlUmVmKCk7XHJcblxyXG4gIHVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICBuZXcgQ2lyY2xlVHlwZShjaXJjbGVJbnN0YW5jZS5jdXJyZW50KS5yYWRpdXMoODAwKS5kaXIoLTEpO1xyXG4gIH0sIFtdKTtcclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDxQYWdlPlxyXG4gICAgICA8aDE+SGVsbG8gd29ybGQhPC9oMT5cclxuICAgIDwvUGFnZT5cclxuICApXHJcbn0iLCJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJjaXJjbGV0eXBlXCIpOyIsIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIm5leHQvaGVhZFwiKTsiLCJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiLCJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdC9qc3gtZGV2LXJ1bnRpbWVcIik7Il0sIm5hbWVzIjpbInVzZUVmZmVjdCIsInVzZVJlZiIsIkNpcmNsZVR5cGUiLCJNYWluSGVhZGVyIiwiY2lyY2xlSW5zdGFuY2UiLCJjdXJyZW50IiwicmFkaXVzIiwiZGlyIiwiSGVhZGVyIiwiUGFnZSIsImNoaWxkcmVuIiwiSGVhZCIsIkluZGV4IiwiZ2V0TGF5b3V0IiwicGFnZSJdLCJzb3VyY2VSb290IjoiIn0=
