@@ -7,7 +7,7 @@
 /.pnp
 *.pnp.js
 .pnp.js
-/.next
+.next
 
 # testing
 */coverage

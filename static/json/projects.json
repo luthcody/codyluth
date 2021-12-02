@@ -1,11 +1,60 @@
 [
     {
-        "name": "Project 1"
+        "id": "electratech",
+        "name": "Electra Technical Sales",
+        "url": "http://www.electratech.com/",
+        "githubUrl": "https://github.com/luthcody/electratech-2020",
+        "thumbnailImage": "/projects/electratech/mainThumbnail.png",
+        "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
+        "technicalSpecs": [
+            {
+                "key": "Framework",
+                "value": "React"
+            },
+            {
+                "key": "Hosting Platform",
+                "value": "Static File Server"
+            }
+        ],
+        "additionalInfo": [
+            {
+                "key": "Time to Completion",
+                "value": "~2 Weeks"
+            }
+        ]
     },
     {
-        "name": "Project 2"
+        "id": "andersonblues",
+        "name": "Anderson Blues Blueberry Farm",
+        "url": "http://www.electratech.com/",
+        "thumbnailImage": "/projects/electratech/mainThumbnail.png",
+        "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
+        "technicalSpecs": [
+            {
+                "key": "Framework",
+                "value": "React"
+            },
+            {
+                "key": "Hosting Platform",
+                "value": "Static File Server"
+            }
+        ]
     },
     {
-        "name": "Project 3"
+        "id": "electratech3",
+        "name": "Electra Technical Sales",
+        "url": "http://www.electratech.com/",
+        "thumbnailImage": "/projects/electratech/mainThumbnail.png",
+        "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
+        "technicalSpecs": [
+            {
+                "key": "Framework",
+                "value": "React"
+            },
+            {
+                "key": "Hosting Platform",
+                "value": "Static File Server"
+            }
+        ]
     }
 ]
