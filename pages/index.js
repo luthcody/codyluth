@@ -1,6 +1,8 @@
 import React from "react";
 import Typed from 'typed.js';
+import ProjectTile from '../components/projectTile';
 import styles from './index.module.scss';
+import projects from '../static/json/projects.json';
 
 export default function Index() {
   const el = React.useRef(null);
@@ -25,6 +27,8 @@ export default function Index() {
     }
   }, [])
 
+  const projectTiles = projects.map((project) => <ProjectTile project={project} />);
+
   return (
     <div className="row justify-content-center">
       <div className={'col-12 col-md-8 px-4 ' + styles.typed}>
@@ -32,6 +36,7 @@ export default function Index() {
       </div>
 
       <h3 className="col-12 text-center mt-4">Projects</h3>
+      {projectTiles}
     </div>
   )
 }
