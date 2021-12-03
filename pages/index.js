@@ -6,7 +6,6 @@ import styles from './index.module.scss';
 import projects from '../static/json/projects.json';
 
 function getTypedStrings(ref) {
-  console.log(ref);
   switch (ref) {
     case 'self':
       return [
@@ -29,7 +28,6 @@ export default function Index() {
   const { query } = useRouter();
   const el = React.useRef(null);
 	const typed = React.useRef(null);
-  console.log(query);
   React.useEffect(() => {
     const options = {
       strings: getTypedStrings(query.ref),
