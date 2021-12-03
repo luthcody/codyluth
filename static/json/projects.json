@@ -3,7 +3,6 @@
         "id": "electratech",
         "name": "Electra Technical Sales",
         "url": "http://www.electratech.com/",
-        "githubUrl": "https://github.com/luthcody/electratech-2020",
         "thumbnailImage": "/projects/electratech/mainThumbnail.png",
         "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
         "technicalSpecs": [
@@ -21,40 +20,52 @@
                 "key": "Time to Completion",
                 "value": "~2 Weeks"
             }
-        ]
+        ],
+        "tags": ["React", "SCSS"]
+    },
+    {
+        "id": "codyluth",
+        "name": "Cody Luth",
+        "url": "/?ref=self",
+        "githubUrl": "https://github.com/luthcody/codyluth",
+        "thumbnailImage": "/projects/codyluth/mainThumbnail.png",
+        "description": "The website your on now!  Built from the ground up using NextJS, this site utilizes React and various caching methods to provide a lightweight, snappy experience for viewers.",
+        "technicalSpecs": [
+            {
+                "key": "Framework",
+                "value": "NextJS"
+            },
+            {
+                "key": "Hosting Platform",
+                "value": "Heroku"
+            }
+        ],
+        "additionalInfo": [
+            {
+                "key": "Time to Completion",
+                "value": "~1 Weeks"
+            }
+        ],
+        "tags": ["NextJS", "React", "SCSS"]
     },
     {
         "id": "andersonblues",
-        "name": "Anderson Blues Blueberry Farm",
-        "url": "http://www.electratech.com/",
-        "thumbnailImage": "/projects/electratech/mainThumbnail.png",
-        "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
+        "name": "Anderson Blues",
+        "url": "https://www.andersonbluesfarm.com/",
+        "thumbnailImage": "/projects/andersonblues/mainThumbnail.png",
+        "description": "A website for a local Blueberry Farm. Designed and constructed using Wix allowing the client to take over management of the site without development help.",
         "technicalSpecs": [
             {
-                "key": "Framework",
-                "value": "React"
-            },
-            {
                 "key": "Hosting Platform",
-                "value": "Static File Server"
+                "value": "Wix"
             }
-        ]
-    },
-    {
-        "id": "electratech3",
-        "name": "Electra Technical Sales",
-        "url": "http://www.electratech.com/",
-        "thumbnailImage": "/projects/electratech/mainThumbnail.png",
-        "description": "A static website built from scratch using the React framework. The site dynamically reads from a JSON file on the server, allowing for easy updates to content.",
-        "technicalSpecs": [
+        ],
+        "additionalInfo": [
             {
-                "key": "Framework",
-                "value": "React"
-            },
-            {
-                "key": "Hosting Platform",
-                "value": "Static File Server"
+                "key": "Time to Completion",
+                "value": "~3 Weeks"
             }
-        ]
+        ],
+        "tags": ["Wix"]
     }
 ]
