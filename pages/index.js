@@ -42,7 +42,7 @@ export default function Index() {
     }
   }, [query])
 
-  const projectTiles = projects.map((project) => <ProjectTile project={project} />);
+  const projectTiles = projects.map((project) => <ProjectTile key={project.id} project={project} />);
 
   return (
     <div className="row justify-content-center">

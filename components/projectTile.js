@@ -7,7 +7,7 @@ export default function ProjectTile({ project }) {
   
   if (project && project.tags) {
     tags = project.tags.map((tag) => {
-      return (<span className={styles.tag}>
+      return (<span key={tag} className={styles.tag}>
         <span className={styles.tagColor} data-tag={tag}></span>
         {tag}
       </span>)
