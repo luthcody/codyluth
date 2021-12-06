@@ -25,7 +25,7 @@ const Project = ({ project }) => {
         <Image src={project.thumbnailImage} width={1200} height={700}/>
       </div>
       <div className="col-12 col-lg-6">
-        <h2>{project.name}</h2>
+        <h1 className="h2">{project.name}</h1>
         <h5>{project.description}</h5>
 
         {writeDataSection('Technical Specifications', project.technicalSpecs)}    

@@ -46,6 +46,7 @@ export default function Index() {
 
   return (
     <div className="row gx-0 justify-content-center">
+      <h1 className="d-none">Cody Luth</h1>
       <div className={'col-12 col-md-8 px-2 px-md-4 ' + styles.typed}>
         <span ref={el} />
       </div>
