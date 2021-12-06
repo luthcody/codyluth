@@ -1,3 +1,4 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import './variables.scss';
 
 #__next {
@@ -8,7 +9,7 @@
 
 @font-face {
   font-family: 'Rhodium Libre';
-  src: url('static/fonts/RhodiumLibre-Regular.ttf');
+  src: url('fonts/RhodiumLibre-Regular.ttf');
 }
 
 html,

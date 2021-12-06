@@ -8,6 +8,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Cody Luth</title>
         <meta name="description" content="I'm a web developer who specializes in React-Based applications (like NextJS). I also develop all-in-one solutions like Wix." />
+        <meta name="keywords" content="Web Developer, Cody, Luth, React, NextJS, Javascript, Freelance" />
 
         // Google Tag Manager
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

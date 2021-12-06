@@ -1,7 +1,11 @@
-@import '../variables.scss';
+@import '../static/variables.scss';
 
 .projectCardContainer {
   padding: 10px 5px;
+
+  @include media-breakpoint-up(md) {
+    padding: 15px;
+  }
 }
 
 .projectCard {

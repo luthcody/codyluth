@@ -16,10 +16,10 @@ function getTypedStrings(ref) {
       break;
     default:
       return [
-        "Hey... ",
-        "Hey... I'm <span class='text-color-blue'>Cody</span>.",
-        "Hey... I'm <span class='text-color-blue'>Cody</span>.</br>I'm a web developer for <span class='text-color-blue'>Leatherman Tool Group</span>.",
-        "Hey... I'm <span class='text-color-blue'>Cody</span>.</br>I'm a web developer for <span class='text-color-blue'>Leatherman Tool Group</span>.</br>I also <span class='text-color-blue'>freelance</span>.",
+        "Welcome! ",
+        "Welcome! I'm <span class='text-color-blue'>Cody</span>.",
+        "Welcome! I'm <span class='text-color-blue'>Cody</span>.</br>I'm a <span class='text-color-blue'>Web Developer</span> for Leatherman Tool Group.",
+        "Welcome! I'm <span class='text-color-blue'>Cody</span>.</br>I'm a <span class='text-color-blue'>Web Developer</span> for Leatherman Tool Group.</br>I also <span class='text-color-blue'>Freelance</span>.",
       ]
   }
 }

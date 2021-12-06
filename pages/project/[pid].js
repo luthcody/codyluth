@@ -19,7 +19,8 @@ const Project = ({ project }) => {
   return (
     <div className="row">
       <Head>
-        <title>{'Cody Luth - ' + project.name}</title>
+        <title>{project.name + ' - Cody Luth'}</title>
+        <meta name="description" content={'Project Description: ' + project.description} />
       </Head>
       <div className="col-12 col-lg-6">
         <Image src={project.thumbnailImage} width={1200} height={700}/>
