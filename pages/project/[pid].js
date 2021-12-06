@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Projects from '../../static/json/projects.json'
 
 function writeKeyValuePair(pairs) {
-  return pairs ? pairs.map((spec) => (<h5>{spec.key}: {spec.value}</h5>)) : ''
+  return pairs ? pairs.map((spec) => (<h5 key={spec.key + '-' + spec.value}>{spec.key}: {spec.value}</h5>)) : ''
 }
 
 function writeDataSection(title, keyValuePairs) {

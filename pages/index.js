@@ -42,11 +42,11 @@ export default function Index() {
     }
   }, [query])
 
-  const projectTiles = projects.map((project) => <ProjectTile key={project.id} project={project} />);
+  const projectTiles = projects.map((project, i) => <ProjectTile key={project.id} project={project} priority={i < 3}/>);
 
   return (
-    <div className="row justify-content-center">
-      <div className={'col-12 col-md-8 px-4 ' + styles.typed}>
+    <div className="row gx-0 justify-content-center">
+      <div className={'col-12 col-md-8 px-2 px-md-4 ' + styles.typed}>
         <span ref={el} />
       </div>
 

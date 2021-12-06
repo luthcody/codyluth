@@ -18,7 +18,7 @@ export default function ProjectTile({ project }) {
     <Link href={'/project/' + project.id}>
       <a className={'col-12 col-md-4 ' + styles.projectCardContainer}>
       <div className={styles.projectCard}>
-            <Image src={project.thumbnailImage} className={styles.projectThumbnail} width={500} height={300} />
+            <Image src={project.thumbnailImage} className={styles.projectThumbnail} width={500} height={300} priority={true} />
             <div className={styles.projectCardData}>
               {project.name}
             </div>
