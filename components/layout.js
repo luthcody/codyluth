@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { ToastContainer } from 'react-toastify';
 import styles from './layout.module.scss'
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Layout({ children }) {
   return (
@@ -30,6 +32,7 @@ export default function Layout({ children }) {
       <div>
         {children}
       </div>
+      <ToastContainer />
     </div>
   )
 }
