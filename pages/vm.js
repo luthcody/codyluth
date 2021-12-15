@@ -18,11 +18,11 @@ export default function VM() {
   }
 
   return (
-    <div className="row justify-content-center">
-      <div className="col-3 mx-1 mt-1">Game Server</div>
-      <input className="col-2 mx-1 pt-1" type="text" id="password" placeholder="Password" onChange={(event) => setTypedPassword(event.target.value)}/>
-      <button className="col-1 mx-1 btn-primary" onClick={() => sendVMRequest('start')}>Start</button>
-      <button className="col-1 mx-1 btn-primary" onClick={() => sendVMRequest('stop')}>Stop</button>
+    <div className="row justify-content-center p-3">
+      <div className="col-12 col-lg-3 mx-1 mt-1 text-center">Game Server</div>
+      <input className="col-12 col-lg-2 mx-1 pt-1" type="text" id="password" placeholder="Password" onChange={(event) => setTypedPassword(event.target.value)}/>
+      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('start')}>Start</button>
+      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('stop')}>Stop</button>
       <div className="h6 text-center mt-2">Server shuts down automatically at 12am & 6am</div>
     </div>
   );
