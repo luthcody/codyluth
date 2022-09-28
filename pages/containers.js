@@ -5,6 +5,16 @@ export default function VM() {
   const [typedPassword, setTypedPassword] = useState('');
   const [currentVMState, setCurrentVMState] = useState('');
 
+  const displayStateMapping = {
+    Running: "Running",
+    Stopped: "Stopped",
+    Pending: "Pending",
+    Succeeded: "Running",
+    Failed: "Stopped",
+  };
+
+  const displayState = displayStateMapping[currentVMState];
+
   const getContainerState = async () => {
     const response = await fetch(`/api/containerState`);
     const json = await response.json();
@@ -42,10 +52,10 @@ export default function VM() {
     <div className="row justify-content-center p-3">
       <div className="col-12 col-lg-3 mx-1 mt-1 text-center">Game Server</div>
       <input className="col-12 col-lg-2 mx-1 pt-1" type="password" id="password" placeholder="Password" onChange={(event) => setTypedPassword(event.target.value)}/>
-      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('start')} disabled={currentVMState !== 'Stopped'}>Start</button>
-      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('stop')} disabled={currentVMState === 'Stopped'}>Stop</button>
-      <div className="col-12 col-lg-2 mx-1 mt-1">{currentVMState}</div>
-      <div className="h6 text-center mt-2">Server shuts down automatically at 12am & 6am</div>
+      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('start')} disabled={displayState !== 'Stopped' || !currentVMState}>Start</button>
+      <button className="col-5 col-lg-1 mx-1 btn btn-primary" onClick={() => sendVMRequest('stop')} disabled={displayState === 'Stopped' || !currentVMState}>Stop</button>
+      <div className="col-12 col-lg-2 mx-1 mt-1">{displayState}</div>
+      <div className="h6 text-center mt-2">Server shuts down automatically after being inactive for 10 minutes</div>
     </div>
   );
 }
