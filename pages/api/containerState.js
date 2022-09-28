@@ -3,7 +3,6 @@ import { DefaultAzureCredential } from "@azure/identity";
 import { SecretClient } from "@azure/keyvault-secrets";
 
 export default async function handler(req, res) {
-  const { action, password } = req.query;
   const azureCredential = new DefaultAzureCredential();
 
   let response = {};
@@ -12,8 +11,6 @@ export default async function handler(req, res) {
   const contianerGroupName = process.env.MAIN_CONTAINER_GROUP_NAME;
 
   response = await containerManager.containerGroups.get(resourceGroupName, contianerGroupName);
-  
-  console.log(response);
 
-  res.json({ success: true });
+  res.json({ success: true, serverStatus: response.instanceView.state });
 }
