@@ -12,5 +12,7 @@ export default async function handler(req, res) {
 
   response = await containerManager.containerGroups.get(resourceGroupName, contianerGroupName);
 
+  console.log(response);
+
   res.json({ success: true, serverStatus: response.instanceView.state });
 }

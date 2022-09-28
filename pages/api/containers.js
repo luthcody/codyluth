@@ -3,7 +3,7 @@ import { DefaultAzureCredential } from "@azure/identity";
 import { SecretClient } from "@azure/keyvault-secrets";
 
 export default async function handler(req, res) {
-  const { action, password } = req.query;
+  const { action, password } = JSON.parse(req.body);
   const azureCredential = new DefaultAzureCredential();
 
   const keyvault = new SecretClient(process.env.KEYVAULT_URL, azureCredential);

@@ -84,4 +84,8 @@ h6,
   &:focus {
     box-shadow: 0 0 0 0.25rem rgb(186 186 186 / 50%)
   }
+
+  &:disabled {
+    background-color: $light-grey;
+  }
 }
