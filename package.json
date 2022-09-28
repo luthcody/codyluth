@@ -8,6 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@azure/arm-containerinstance": "^9.0.0",
+    "@azure/identity": "^3.0.0",
+    "@azure/keyvault-secrets": "^4.6.0",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.0",
     "circletype": "^2.3.0",
