@@ -8,6 +8,26 @@ async function getContainerState() {
 
 export default function VM() {
   const [typedPassword, setTypedPassword] = useState('');
+  const [currentVMState, setCurrentVMState] = useState('');
+
+  const displayStateMapping = {
+    Running: "Running",
+    Stopped: "Stopped",
+    Pending: "Pending",
+    Succeeded: "Stopped",
+    Failed: "Stopped",
+  };
+
+  const displayState = displayStateMapping[currentVMState];
+
+  const getContainerState = async () => {
+    const response = await fetch(`/api/containerState`);
+    const json = await response.json();
+  
+    if (response.ok && json.success) {
+      setCurrentVMState(json.serverStatus)
+    }
+  }
 
   getContainerState();
 
