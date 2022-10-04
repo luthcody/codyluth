@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from 'typed.js';
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 import ProjectTile from '../components/projectTile';
 import styles from './index.module.scss';
 import projects from '../static/json/projects.json';

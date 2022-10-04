@@ -1,15 +1,20 @@
 import NextAuth from "next-auth"
-import Credentials from "next-auth/providers/credentials"
+import Google from "next-auth/providers/google"
+import { DefaultAzureCredential } from "@azure/identity";
+import { SecretClient } from "@azure/keyvault-secrets";
+
+const azureCredential = new DefaultAzureCredential();
+const keyvault = new SecretClient(process.env.KEYVAULT_URL, azureCredential);
+
+const googleClientID = keyvault.getSecret('google-sso-client-id');
+const googleClientSecret = keyvault.getSecret('google-sso-client-secret');
 
 export const authOptions = {
   providers: [
-    Credentials({
-      name: "Credentials",
-      credentials: {
-        username: { label: "Username", type: "text" },
-        password: { label: "Password", type: "password" }
-      },
-    }),
+    Google({
+      clientId: googleClientID,
+      clientSecret: googleClientSecret
+    })
   ],
 }
 

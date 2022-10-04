@@ -28,9 +28,18 @@
 
 .link {
   margin: 0 15px;
-  color: $light-grey;
   text-decoration: none;
   font-size: 25px;
   font-family: $header-font;
   transition: 0.3s;
+}
+
+.privacypolicy {
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.lightMode {
+  background-color: $light-grey;
+  color: $charcol;
 }

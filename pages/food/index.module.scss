@@ -1,0 +1,20 @@
+@import '../../static/variables.scss';
+
+.container {
+  color: $light-grey;
+}
+
+.mainSelections {
+
+  background-color: $dark-grey;
+  border-radius: 5px;
+  border: solid 1px $light-grey;
+  padding: 15px 5px;
+  text-align: center;
+  transition: all 0.2s; 
+
+  &:hover {
+    color: $blue;
+    border: solid 1px $blue;
+  }
+}

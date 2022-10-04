@@ -6,7 +6,7 @@ import '../static/global.scss'
 export default function MyApp({ Component, pageProps : { session, ...pageProps} }) {
   return (
     <SessionProvider session={session}>
-      <Layout>
+      <Layout lightMode={Component.lightMode}>
         <Component {...pageProps} />
       </Layout>
     </SessionProvider>

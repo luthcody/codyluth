@@ -4,9 +4,22 @@ import { ToastContainer } from 'react-toastify';
 import styles from './layout.module.scss'
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function Layout({ children }) {
+export default function Layout({ children, lightMode }) {
+  const lightModeStyle = lightMode ? (
+    <style jsx global>{`
+      body {
+        background-color: #bababa;
+        color: #212121;
+      }
+      a {
+        color: #212121;
+      }
+    `}</style>
+  ) : '';
+
   return (
     <div className={styles.main}>
+      {lightModeStyle}
       <Head>
         <title>Cody Luth</title>
         <meta name="description" content="I'm a web developer who specializes in React-Based applications (like NextJS). I also develop all-in-one solutions like Wix." />
@@ -31,6 +44,9 @@ export default function Layout({ children }) {
       </div>
       <div>
         {children}
+      </div>
+      <div className={`text-end ${styles.privacypolicy}`}>
+        <Link href="/privacyPolicy"><a>Privacy Policy</a></Link>
       </div>
       <ToastContainer />
     </div>
