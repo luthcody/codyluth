@@ -24,7 +24,7 @@ function getTypedStrings(ref) {
   }
 }
 
-export default function Index() {
+function Index() {
   const { query } = useRouter();
   const el = React.useRef(null);
 	const typed = React.useRef(null);
@@ -56,3 +56,7 @@ export default function Index() {
     </div>
   )
 }
+
+Index.lightMode = true;
+
+export default Index;

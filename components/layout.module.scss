@@ -10,6 +10,13 @@
 .menu {
   margin-top: 20px !important;
   margin-bottom: 40px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.menuLight {
+  background-color: $charcol;
+  border-radius: 5px;
 }
 
 .name {
@@ -34,12 +41,15 @@
   transition: 0.3s;
 }
 
-.privacypolicy {
+.privacyPolicy {
   margin-top: 40px;
   font-size: 15px;
+
+  a {
+    transition: color 0.3s;
+  }
 }
 
-.lightMode {
-  background-color: $light-grey;
+.privacyPolicyLight a {
   color: $charcol;
 }

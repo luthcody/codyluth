@@ -16,7 +16,6 @@ async function getData() {
 
   const authRes = await db.authenticate();
   const results = await db.query('SELECT * FROM grocery_items');
-  console.log(results);
 
   return results;
 }

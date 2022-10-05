@@ -20,6 +20,7 @@ body {
   font-family: $header-font;
   background-color: $charcol;
   color: $light-grey;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {

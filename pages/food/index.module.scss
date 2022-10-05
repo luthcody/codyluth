@@ -1,9 +1,5 @@
 @import '../../static/variables.scss';
 
-.container {
-  color: $light-grey;
-}
-
 .mainSelections {
 
   background-color: $dark-grey;
@@ -17,4 +13,8 @@
     color: $blue;
     border: solid 1px $blue;
   }
+}
+
+.mainSelectionsLight {
+  background-color: $charcol;
 }
