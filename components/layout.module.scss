@@ -11,12 +11,11 @@
   margin-top: 20px !important;
   margin-bottom: 40px;
   padding: 10px 15px;
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .menuLight {
-  background-color: $charcol;
-  border-radius: 5px;
+  color: $charcol;
 }
 
 .name {
@@ -39,6 +38,10 @@
   font-size: 25px;
   font-family: $header-font;
   transition: 0.3s;
+}
+
+.linkLight {
+  color: $charcol;
 }
 
 .privacyPolicy {

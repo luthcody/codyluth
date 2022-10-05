@@ -1,37 +1,42 @@
-import styles from './index.module.scss';
+import Link from 'next/link'
 import { GiHotMeal } from 'react-icons/gi';
 import { FaListUl, FaAppleAlt } from 'react-icons/fa';
+import styles from './index.module.scss';
 
-function Food({ lightMode }) {
+export default function Food() {
   return (
-    <div className="row">
-      <div className="col-12 col-md-4">
-        <div className={`${styles.mainSelections} ${lightMode ? styles.mainSelectionsLight : ''}`}>
-          <FaListUl size={'3em'}/>
-          <div className="mt-2">Grocery Lists</div>
-        </div>
+    <div className="row justify-content-center">
+      <div className="col-12 col-md-3">
+        <Link href='/food/lists'><a className={styles.mainSelectionsLink}>
+          <div className={styles.mainSelections}>
+            <FaListUl size={'3em'} />
+            <div className="mt-2">Grocery Lists</div>
+          </div>
+        </a></Link>
       </div>
-      <div className="col-12 col-md-4">
-        <div className={`${styles.mainSelections} ${lightMode ? styles.mainSelectionsLight : ''}`}>
-          <GiHotMeal size={'3em'}/>
-          <div className="mt-2">Recipes</div>
-        </div>
+      <div className="col-12 col-md-3">
+        <Link href='/food/meals'><a className={styles.mainSelectionsLink}>
+          <div className={styles.mainSelections}>
+            <GiHotMeal size={'3em'} />
+            <div className="mt-2">Recipes</div>
+          </div>
+        </a></Link>
       </div>
-      <div className="col-12 col-md-4">
-        <div className={`${styles.mainSelections} ${lightMode ? styles.mainSelectionsLight : ''}`}>
-          <FaAppleAlt size={'3em'}/>
-          <div className="mt-2">Grocery Items</div>
-        </div>
+      <div className="col-12 col-md-3">
+        <Link href='/food/items'><a className={styles.mainSelectionsLink}>
+          <div className={styles.mainSelections}>
+            <FaAppleAlt size={'3em'} />
+            <div className="mt-2">Grocery Items</div>
+          </div>
+        </a></Link>
       </div>
       <div className="col-12 mt-3">
-        <div className={`${styles.mainSelections} ${lightMode ? styles.mainSelectionsLight : ''}`}>
-          <div className="">Go to active list</div>
-        </div>
+        <Link href='/food/lists'><a className={styles.mainSelectionsLink}>
+          <div className={styles.mainSelections}>
+            <div className="">Go to active list</div>
+          </div>
+        </a></Link>
       </div>
     </div>
   );
 }
-
-Food.lightMode = true;
-
-export default Food;

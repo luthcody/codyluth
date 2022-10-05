@@ -11,15 +11,13 @@ async function getSequelizeConnection() {
   })
 }
 
-async function getData() {
+async function getAllLists() {
   const db = await getSequelizeConnection();
+  const results = await db.query('SELECT * FROM grocery_lists');
 
-  const authRes = await db.authenticate();
-  const results = await db.query('SELECT * FROM grocery_items');
-
-  return results;
+  return results[0];
 }
 
 export {
-  getData
+  getAllLists
 }

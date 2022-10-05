@@ -12,6 +12,7 @@ export default function Layout({ children, lightMode, setLightMode }) {
     <style jsx global>{`
       body {
         background-color: #d1d1d1;
+        color: #212121;
       }
     `}</style>
   ) : '';
@@ -32,7 +33,7 @@ export default function Layout({ children, lightMode, setLightMode }) {
           <Link href="/"><a>{ '// Cody Luth' }</a></Link>
         </div>
         <div className="col-12 col-md-8 align-self-middle text-center text-md-end mt-1">
-          <a href="https://github.com/luthcody" target="_blank" className={styles.link}>{'{ GitHub }'}</a>
+          <a href="https://github.com/luthcody" target="_blank" className={`${styles.link} ${lightMode ? styles.linkLight : ''}`}>{'{ GitHub }'}</a>
           <span className="ms-2" onClick={() => { setCookie('lightMode', !lightMode ? 'true' : 'false'); setLightMode(!lightMode); }}>{lightModeIcon}</span>
         </div>
       </div>

@@ -1,20 +1,16 @@
 @import '../../static/variables.scss';
 
-.mainSelections {
+.mainSelectionsLink {
+  color: inherit;
+  text-decoration: none;
+}
 
-  background-color: $dark-grey;
-  border-radius: 5px;
-  border: solid 1px $light-grey;
+.mainSelections {
   padding: 15px 5px;
   text-align: center;
   transition: all 0.2s; 
 
   &:hover {
     color: $blue;
-    border: solid 1px $blue;
   }
-}
-
-.mainSelectionsLight {
-  background-color: $charcol;
 }
