@@ -14,6 +14,10 @@ export default function Layout({ children, lightMode, setLightMode }) {
         background-color: #d1d1d1;
         color: #212121;
       }
+
+      a {
+        color: #212121
+      }
     `}</style>
   ) : '';
 

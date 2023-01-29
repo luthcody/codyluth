@@ -4,6 +4,4 @@ function Items() {
   )
 }
 
-Items.lightMode = true;
-
 export default Items;

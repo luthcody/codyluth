@@ -7,7 +7,7 @@ export default function Food() {
   return (
     <div className="row justify-content-center">
       <div className="col-12 col-md-3">
-        <Link href='/food/lists'><a className={styles.mainSelectionsLink}>
+        <Link href='/food/allLists'><a className={styles.mainSelectionsLink}>
           <div className={styles.mainSelections}>
             <FaListUl size={'3em'} />
             <div className="mt-2">Grocery Lists</div>
@@ -31,7 +31,7 @@ export default function Food() {
         </a></Link>
       </div>
       <div className="col-12 mt-3">
-        <Link href='/food/lists'><a className={styles.mainSelectionsLink}>
+        <Link href='/food/allLists'><a className={styles.mainSelectionsLink}>
           <div className={styles.mainSelections}>
             <div className="">Go to active list</div>
           </div>
