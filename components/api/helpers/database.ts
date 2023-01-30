@@ -1,11 +1,12 @@
 import { Sequelize } from 'sequelize';
 import { getSecretValue } from './keyvault';
+import models from './databaseDefinitions/models';
 
 async function getSequelizeConnection() {
   const databaseUser = await getSecretValue('db-main-user');
   const databasePassword = await getSecretValue('db-main-pass');
 
-  return new Sequelize(process.env.MAIN_DATABASE_NAME, databaseUser, databasePassword, {
+  const sequelize = new Sequelize(process.env.MAIN_DATABASE_NAME, databaseUser, databasePassword, {
     host: process.env.MAIN_DATABASE_HOST,
     dialect: 'mssql',
     dialectOptions: {
@@ -14,6 +15,13 @@ async function getSequelizeConnection() {
       }
     },
   })
+
+  return models(sequelize);
+}
+
+async function syncDatabase() {
+  const db = await getSequelizeConnection();
+  return db.sync();
 }
 
 async function getAllLists() {
@@ -56,6 +64,7 @@ async function updateListItemCompleted(listId: string, itemId: string, completed
 }
 
 export {
+  syncDatabase,
   getAllLists,
   getListMealsAndItems,
   updateListItemCompleted
