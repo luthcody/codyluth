@@ -14,10 +14,6 @@ export default (sequelize: Sequelize) => sequelize.define('grocery_items', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    location: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     category: {
         type: DataTypes.STRING,
         allowNull: false,

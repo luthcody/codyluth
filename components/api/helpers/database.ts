@@ -21,7 +21,7 @@ async function getSequelizeConnection() {
 
 async function syncDatabase() {
   const db = await getSequelizeConnection();
-  return db.sync();
+  return db.sync({ force: true });
 }
 
 async function getAllLists() {
