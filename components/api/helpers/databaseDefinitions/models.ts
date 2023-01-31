@@ -13,8 +13,8 @@ export default (sequelize: Sequelize) => {
     const grocery_meal_items_model = grocery_meal_items(sequelize);
 
     // Item location relationship
-    grocery_locations_model.hasMany(grocery_items_model, { foreignKey: { name: 'location', allowNull: false }});
-    grocery_items_model.belongsTo(grocery_locations_model, { foreignKey: { name: 'location', allowNull: false }});
+    grocery_locations_model.hasMany(grocery_items_model, { foreignKey: { name: 'location' }, onDelete: 'SET NULL' });
+    grocery_items_model.belongsTo(grocery_locations_model, { foreignKey: { name: 'location' }, onDelete: 'NO ACTION' });
 
     // List meal relationship
     grocery_list_model.hasMany(grocery_meals_model, { foreignKey: { name: 'mealId' }, onDelete: 'NO ACTION' });
