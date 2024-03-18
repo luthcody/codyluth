@@ -1,3 +1,4 @@
+import { NextApiRequest, NextApiResponse } from "next"
 import NextAuth from "next-auth"
 import Auth0Provider from "next-auth/providers/auth0"
 
@@ -9,8 +10,8 @@ export const authOptions = {
         issuer: process.env.AUTH0_ISSUER
     })
   ],
-  
 }
 
-const handler = NextAuth(authOptions)
-export { handler as GET, handler as POST }
+export default async function auth(req: NextApiRequest, res: NextApiResponse) {
+  return await NextAuth(req, res, authOptions)
+}
